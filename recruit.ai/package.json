@@ -1,0 +1,14 @@
+{
+  "name": "recruit-ai-python",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "uvicorn main:app --host 0.0.0.0 --port 3000",
+    "start": "uvicorn main:app --host 0.0.0.0 --port 3000",
+    "build": "echo 'No build step required for Python app'",
+    "lint": "python3 -m py_compile main.py app/*.py app/*/*.py"
+  },
+  "dependencies": {
+    "pinecone-client": "^2.0.0"
+  }
+}
